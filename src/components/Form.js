@@ -23,7 +23,6 @@ export default function Form (params) {
         x = x.split("").map(x => {return Number(x)});
         console.log(x);
 
-        //create logic for 
 
     }
 
