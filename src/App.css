@@ -1,4 +1,5 @@
 .App,
+form,
 header {
   display: flex;
 }
@@ -29,19 +30,22 @@ footer {
 }
 
 form {
+  flex-flow: column nowrap;
   flex: 3;
 }
 
 .input {
+  flex: 0;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 0.6rem;
 }
-.input label, .input input {
-  grid-column-end: span 3;
+.input input {
+  grid-column-end: span 2;
 }
 .input label {
+  grid-column-end: span 3;
   font-size: 1.1em;
 }
 .input input,
