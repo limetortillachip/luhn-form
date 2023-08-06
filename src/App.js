@@ -1,12 +1,14 @@
 import Form from "./components/Form";
+import './App.css';
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 function App() {
   return (
     <div className="App">
-      <header>
-        <h1>Luhn Algorithm Validator</h1>
-        < Form />
-      </header>
+      < Header />
+      < Form />
+      < Footer />
     </div>
   );
 }

@@ -1,0 +1,39 @@
+@import 'https://fonts.googleapis.com/css2?family=Mirza:wght@400;500;600;700&display=swap'
+
+$font: 'Mirza', monosapce
+$bit: 1em
+
+.App 
+    font:
+        family: $font
+        size: 1em
+    min-height: 100vh
+    display: flex
+    flex-flow: column
+    align-items: center
+
+h1
+    font-size: 3em
+
+h2
+    font-size: 2em
+
+header,
+footer
+    flex: 0
+
+form
+    flex: 1
+
+.input
+    display: grid
+    grid-template-columns: repeat(4, 1fr)
+    justify-content: space-around
+
+    label
+        grid-column-end: span 3
+
+        input
+            margin-inline: $bit
+
+
