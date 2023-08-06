@@ -32,11 +32,12 @@ footer
 
 form
     flex-flow: column nowrap
-    justify-content: space-around
+    justify-content: flex-start
     flex: 3
-    gap: $bit
+    gap: calc($bit*2)
 
 .input
+    flex: 0
     flex-flow: row wrap
     gap: calc($bit/2)
 
@@ -61,3 +62,5 @@ form
     button:hover 
         background: hsl(333, 90%, 87%)
 
+.output
+    flex: 1
