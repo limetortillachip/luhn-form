@@ -14,15 +14,16 @@ header,
 }
 
 h1 {
-  font-size: 3em;
+  font-size: 2.5em;
 }
 
 h2 {
-  font-size: 2em;
+  font-size: 1.8em;
+  margin: 0;
 }
 
 header {
-  flex: 2;
+  flex: 3;
   align-items: flex-end;
 }
 
@@ -32,12 +33,13 @@ footer {
 
 form {
   flex-flow: column nowrap;
+  justify-content: space-evenly;
   flex: 3;
+  gap: 1.2rem;
 }
 
 .input {
   flex-flow: row wrap;
-  flex: 0;
   gap: 0.6rem;
 }
 .input label {
@@ -58,10 +60,6 @@ form {
 }
 .input button:hover {
   background: hsl(333, 90%, 87%);
-}
-
-.output {
-  flex: 1;
 }
 
 /*# sourceMappingURL=App.css.map */
