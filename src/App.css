@@ -51,6 +51,7 @@ form {
 }
 .input input,
 .input button {
+  font-size: 0.6em;
   padding: 0.2em 0.5em;
   border: 1px solid hsl(333, 60%, 65%);
 }
