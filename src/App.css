@@ -41,11 +41,11 @@ form {
   gap: 0.6rem;
 }
 .input label {
-  flex: 0 50%;
+  flex: 1;
   font-size: 1.1em;
 }
 .input input {
-  flex: 1 50%;
+  flex: 1 80%;
 }
 .input input,
 .input button {
