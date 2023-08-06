@@ -1,6 +1,7 @@
 .App,
 form,
-header {
+header,
+.input {
   display: flex;
 }
 
@@ -35,18 +36,16 @@ form {
 }
 
 .input {
+  flex-flow: row wrap;
   flex: 0;
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(2, 1fr);
   gap: 0.6rem;
 }
-.input input {
-  grid-column-end: span 2;
-}
 .input label {
-  grid-column-end: span 3;
+  flex: 0 50%;
   font-size: 1.1em;
+}
+.input input {
+  flex: 1 50%;
 }
 .input input,
 .input button {
@@ -54,10 +53,15 @@ form {
   border: 1px solid hsl(333, 60%, 65%);
 }
 .input button {
+  flex: 0;
   background: hsl(333, 90%, 90%);
 }
 .input button:hover {
   background: hsl(333, 90%, 87%);
+}
+
+.output {
+  flex: 1;
 }
 
 /*# sourceMappingURL=App.css.map */
