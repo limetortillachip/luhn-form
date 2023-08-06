@@ -2,10 +2,11 @@ import { useState, useEffect, useRef } from "react"
 
 export default function Form (props) {
     const [card, setCard] = useState({
-        cardNum: ""
+        cardNum: "",
+        status: 'unvalidated'       //'unvalidated`, `validating`, `validated`
     });
 
-    const [showOutput, setShowOutput] = useState(false);
+    //const [showOutput, setShowOutput] = useState(false);
 
     let validRef = useRef(false);
 
@@ -49,16 +50,16 @@ export default function Form (props) {
 
     const handleClick = (e) => {
         e.preventDefault();
-        setShowOutput(true);
+        setCard({...card, status: 'validated'})
+        //setShowOutput(true);
 
     }
 
     const handleChange = (e) => {
-        setShowOutput(false); // reset output results
 
         setCard({
-            ...card,
-            [e.target.name]: e.target.value
+            [e.target.name]: e.target.value,
+            status: 'validating'
         });
     }
 
@@ -66,21 +67,22 @@ export default function Form (props) {
     return (
         <form>
             <div className="input">
-                <label>Enter Card Number: 
-                    <input 
+                <label for="cardNum">Enter Card Number:</label>
+                <input 
                     type="text"
                     name="cardNum"
                     onChange={handleChange} 
                     value={card.cardNum}
                     placeholder="1234567890123456"></input>
-                </label>
                 <button type="submit" onClick={handleClick}>Submit!</button>
             </div>
             <div className="output">
-                {showOutput &&
+                {card.status === 'validated' &&
                     <label><h2>Result</h2>
                         <output name="result">
-                            Card #{card.cardNum} is {validRef.current ? "valid" : "not valid"}.
+                            {card.cardNum.length > 2 ? 
+                            <span>Card #{card.cardNum} is {validRef.current ? "valid" : "not valid"}.</span> :
+                            <span>Not a valid card number. Try again with 2 or more digits. </span>}
                         </output>
                     </label>}
             </div>

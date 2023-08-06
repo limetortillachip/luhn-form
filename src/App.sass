@@ -1,15 +1,25 @@
 @import 'https://fonts.googleapis.com/css2?family=Mirza:wght@400;500;600;700&display=swap'
 
 $font: 'Mirza', monosapce
-$bit: 1em
+$bit: 1.2rem
 
-.App 
+*
+    line-height: 125%
     font:
         family: $font
-        size: 1em
-    min-height: 100vh
+        size: $bit
+
+
+.App,
+.input,
+header
     display: flex
-    flex-flow: column
+
+.App
+    height: 100vh
+    width: clamp(50%, 80%, 85%)
+    margin: 0 auto
+    flex-flow: column nowrap
     align-items: center
 
 h1
@@ -18,22 +28,29 @@ h1
 h2
     font-size: 2em
 
-header,
+header
+    flex: 2
+    align-items: flex-end
+
 footer
     flex: 0
 
 form
-    flex: 1
+    flex: 3
 
 .input
-    display: grid
-    grid-template-columns: repeat(4, 1fr)
-    justify-content: space-around
+    flex-flow: row nowrap
+    align-items: center
+    gap: $bit
 
     label
-        grid-column-end: span 3
+        flex: 3
 
-        input
-            margin-inline: $bit
-
+    input,
+    button
+        flex: 0
+        padding-block: 0
+        padding-inline: 0
+        padding: 0.2em 0.2em
+        vertical-align: center
 
