@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/luhn-form/static/css/main.9b880843.css",
-    "main.js": "/luhn-form/static/js/main.3b9e4ff8.js",
+    "main.css": "/luhn-form/static/css/main.a364be5b.css",
+    "main.js": "/luhn-form/static/js/main.cc99dc30.js",
     "index.html": "/luhn-form/index.html",
-    "main.9b880843.css.map": "/luhn-form/static/css/main.9b880843.css.map",
-    "main.3b9e4ff8.js.map": "/luhn-form/static/js/main.3b9e4ff8.js.map"
+    "main.a364be5b.css.map": "/luhn-form/static/css/main.a364be5b.css.map",
+    "main.cc99dc30.js.map": "/luhn-form/static/js/main.cc99dc30.js.map"
   },
   "entrypoints": [
-    "static/css/main.9b880843.css",
-    "static/js/main.3b9e4ff8.js"
+    "static/css/main.a364be5b.css",
+    "static/js/main.cc99dc30.js"
   ]
 }
