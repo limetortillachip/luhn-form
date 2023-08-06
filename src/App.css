@@ -55,6 +55,7 @@ form {
   border: 1px solid hsl(333, 60%, 65%);
 }
 .input button {
+  color: #141414;
   flex: 0;
   background: hsl(333, 90%, 90%);
 }
