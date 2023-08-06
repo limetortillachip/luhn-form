@@ -78,13 +78,7 @@ export default function Form (props) {
             </div>
             <div className="output">
                 {card.status === 'validated' &&
-                    <label><h2>Result</h2>
-                        <output name="result">
-                            {card.cardNum.length > 2 ? 
-                            <span>Card #{card.cardNum} is {validRef.current ? "valid" : "not valid"}.</span> :
-                            <span>Not a valid card number. Try again with 2 or more digits. </span>}
-                        </output>
-                    </label>}
+                    }
             </div>
         </form>
     )}
