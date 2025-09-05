@@ -1,3 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Mirza:wght@400;500;600;700&display=swap");
+body {
+  font-family: "Intel One Mono", monospace;
+}
+
+h1,
+h2 {
+  font-size: 1.5em;
+  font-family: "Mirza", system-ui;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscaleOne Mono, monospace;
+}
+
 .App,
 form,
 header,
@@ -14,7 +27,7 @@ header,
 }
 
 h1 {
-  font-size: 2.5em;
+  font-size: 3em;
 }
 
 h2 {
