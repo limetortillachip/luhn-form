@@ -37,7 +37,7 @@ h2 {
 
 header {
   flex: 3;
-  align-items: flex-end;
+  align-items: center;
 }
 
 footer {
@@ -53,19 +53,18 @@ form {
 
 .input {
   flex: 0;
-  flex-flow: row wrap;
+  flex-flow: row norap;
   gap: 0.6rem;
 }
 .input label {
   flex: 1;
-  font-size: 1.1em;
 }
 .input input {
-  flex: 1 80%;
+  flex: 0 1;
 }
 .input input,
 .input button {
-  font-size: 0.6em;
+  font-family: "Intel One Mono", monospace;
   padding: 0.2em 0.5em;
   border: 1px solid hsl(333, 60%, 65%);
 }
