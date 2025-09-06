@@ -312,11 +312,6 @@ template {
 
 /*  sass variables
  *  */
--reset-list {
-  padding: 0;
-  margin: 0;
-}
-
 .grid, .App,
 .head,
 .content,
