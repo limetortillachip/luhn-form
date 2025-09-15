@@ -7,13 +7,48 @@
 
 
 /*
-    sass variables
+    SASS VARIABLES
     */
 $bit: 1em
 
 
+/*
+    PAGE ELEMENT CLASSES
+    */
+
 .grid
     display: flex
+
+.App
+    width: auto
+    height: 100vh
+    flex-flow: column nowrap
+
+.head
+    align-items: center
+    flex: 1
+    header
+        flex: 0 50%
+        background: red
+
+.foo
+    flex: 0
+    footer
+        flex: 1
+
+        p
+            text-align: center
+
+
+
+.content
+    flex: 2
+
+
+/*
+    COMMONG STYLING
+    
+    */
 
 .App,  
 .head,
@@ -24,18 +59,6 @@ $bit: 1em
 .head,
 .content,
 .foo
+    justify-content: center
     padding: $bit
-    background: red
 
-
-.App
-    width: auto
-    height: 100vh
-    flex-flow: column nowrap
-
-.head,
-.foo
-    flex: 0
-
-.content
-    flex: 1

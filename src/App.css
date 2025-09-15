@@ -310,7 +310,9 @@ template {
   display: none;
 }
 
-/*  sass variables
+/*  SASS VARIABLES
+ *  */
+/*  PAGE ELEMENT CLASSES
  *  */
 .grid, .App,
 .head,
@@ -319,26 +321,42 @@ template {
   display: flex;
 }
 
-.head,
-.content,
-.foo {
-  padding: 1em;
-  background: red;
-}
-
 .App {
   width: auto;
   height: 100vh;
   flex-flow: column nowrap;
 }
 
-.head,
+.head {
+  align-items: center;
+  flex: 1;
+}
+.head header {
+  flex: 0 50%;
+  background: red;
+}
+
 .foo {
   flex: 0;
 }
+.foo footer {
+  flex: 1;
+}
+.foo footer p {
+  text-align: center;
+}
 
 .content {
-  flex: 1;
+  flex: 2;
+}
+
+/*  COMMONG STYLING
+ *  */
+.head,
+.content,
+.foo {
+  justify-content: center;
+  padding: 1em;
 }
 
 /*# sourceMappingURL=App.css.map */
